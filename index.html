@@ -3,35 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Rodrigo | Desenvolvedor</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="info">
-            <h1>Rodrigo</h1>
-            <p>Um simples portfólio</p>
+
+<header>
+    <div class="info">
+        <h1>Rodrigo</h1>
+        <p>Portfólio de desenvolvimento front-end</p>
+    </div>
+</header>
+
+<nav>
+    <div class="nav">
+        <a href="#hero">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projeto">Projetos</a>
+    </div>
+</nav>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-texto">
+            <h1>Rodrigo P. Barros</h1>
+            <h2>Desenvolvedor Front-end em evolução</h2>
+            <p>Criando projetos com HTML e CSS</p>
+            <a href="https://github.com/RodrigoPBarros" target="_blank">
+                Ver Projetos
+            </a>
         </div>
-    </header>
-    <nav>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </div>
-    </nav>
-    <main>
-        <article class="hero">
-            <div class="hero">
-                <h1>Rodrigo P. Barros</h1>
-                <h2>desenvolvedor Front-end em evolução</h2>
-                <p>Criando Pojetos em Html/Css/Js</p>
-                <a href="https://github.com/RodrigoPBarros">Ver Projetos</a>
-            </div>
-        </article>
+    <img src="assets/Eu.jpg" alt="Minha foto">        
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards">
+
         <article class="card">
-            <h2>HTML </h2>
+            <h2>HTML Semântico</h2>
+            <p>Estruturação de páginas web com foco em organização e boas práticas.</p>
         </article>
-    </main>
+
+        <article class="card">
+            <h2>CSS Moderno</h2>
+            <p>Estilização de layouts com Flexbox, cores e responsividade básica.</p>
+        </article>
+
+        <article class="card">
+            <h2>Projetos Práticos</h2>
+            <p>Desenvolvimento de páginas reais para praticar e evoluir como desenvolvedor.</p>
+        </article>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+            Sou estudante de Ciência da Computação, atualmente focado em desenvolvimento front-end.
+        </p>
+        <p>
+            Estou aprendendo HTML e CSS, criando projetos para melhorar minhas habilidades.
+        </p>
+        <p>
+            Meu objetivo é evoluir como desenvolvedor e construir projetos cada vez melhores.
+        </p>
+    </section>
+
+    <!-- PROJETO -->
+    <section class="projeto" id="projeto">
+
+        <article class="card">
+            <h2>Card de Perfil de Jogos</h2>
+            <p>Site feito com HTML e CSS para praticar estrutura e layout.</p>
+
+            <a href="https://rodrigopbarros.github.io/perfil-jogos/" target="_blank">
+                Ver projeto
+            </a>
+
+            <a href="https://github.com/RodrigoPBarros/perfil-jogos" target="_blank">
+                Ver código
+            </a>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Rodrigo P. Barros — Desenvolvedor Front-end</p>
+    <a href="https://github.com/RodrigoPBarros" target="_blank">GitHub</a>
+</footer>
+
 </body>
 </html>
