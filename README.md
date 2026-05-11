@@ -1,6 +1,6 @@
 # 💻 Portfólio Pessoal | Rodrigo P. Barros
 
-![Preview do Portfólio](./assets/preview-portfolio.png)
+![Preview Portfolio](assets/preview-portfolio.png)
 
 ## 📌 Sobre o Projeto
 Este é o meu portfólio pessoal, desenvolvido para centralizar meus projetos, habilidades e minha evolução como desenvolvedor front-end. O design foi pensado para ser minimalista e funcional, utilizando uma paleta de cores escura com alto contraste para facilitar a leitura e navegação.
