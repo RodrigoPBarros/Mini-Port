@@ -4,9 +4,6 @@
 
 ## 📌 Sobre o Projeto
 Este é o meu portfólio pessoal, desenvolvido para centralizar meus projetos, habilidades e minha evolução como desenvolvedor front-end. O design foi pensado para ser minimalista e funcional, utilizando uma paleta de cores escura com alto contraste para facilitar a leitura e navegação.
-
-> **Acesse online:**![projeto Online](https://rodrigopbarros.github.io/Mini-Port/)
-
 ---
 
 ## 🛠️ Tecnologias e Conceitos
