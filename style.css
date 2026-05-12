@@ -5,7 +5,30 @@
     --text-soft: #9ca3af;
     --primary: #ff3b3b;
     --hover: #ff5c5c;
+    --html-color: #e44d26; /* Laranja HTML5 */
+    --css-color: #264de4;  /* Azul CSS3 */
+    --js-color: #facc15;   /* Amarelo JS */
+    --git-color: #a855f7;  /* Vermelho Git */
 }
+
+/* Estilização individual dos cards de Habilidades */
+.html-card { border: 2px solid var(--html-color) !important; }
+.html-card h2 { color: var(--html-color); }
+
+.css-card { border: 2px solid var(--css-color) !important; }
+.css-card h2 { color: var(--css-color); }
+
+.js-card { border: 2px solid var(--js-color) !important; }
+.js-card h2 { color: var(--js-color); }
+
+.git-card { border: 2px solid var(--git-color) !important; }
+.git-card h2 { color: var(--git-color); }
+
+/* Efeito de brilho no hover para cada cor */
+.html-card:hover { box-shadow: 0 10px 20px rgba(228, 77, 38, 0.2); }
+.css-card:hover { box-shadow: 0 10px 20px rgba(38, 77, 228, 0.2); }
+.js-card:hover { box-shadow: 0 10px 20px rgba(250, 204, 21, 0.2); }
+.git-card:hover { box-shadow: 0 10px 20px rgba(168, 85, 247, 0.2); }
 
 /* RESET */
 * {
@@ -16,10 +39,11 @@
 
 /* BASE */
 body {
-    font-family: "segoe UI", Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -67,7 +91,7 @@ nav {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -103,11 +127,14 @@ nav {
 
 .hero img {
     width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 50%;
+    border: 3px solid var(--primary);
 }
 
-/* CARDS HABILIDADES */
-.cards {
+/* CARDS GERAL */
+.cards, .projeto {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -117,11 +144,14 @@ nav {
 
 .card {
     background-color: var(--card);
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
-    width: 250px;
+    width: 280px;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -129,50 +159,61 @@ nav {
     background-color: #1f2937;
 }
 
-/* SOBRE */
-.sobre {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
+/* DESTAQUE JS */
+.js-card {
+    border: 2px solid var(--js-color) !important;
 }
 
-.sobre h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+.js-card h2 {
+    color: var(--js-color);
+}
+
+.js-card:hover {
+    box-shadow: 0 10px 20px rgba(250, 204, 21, 0.15);
+}
+
+/* PROJETOS */
+.titulo-projeto {
+    text-align: center;
+    margin-top: 40px;
     color: var(--primary);
 }
 
-/* SEÇÃO DE PROJETOS (Ajustado para os cards ficarem lado a lado) */
-.projeto {
+.links {
+    margin-top: 20px;
     display: flex;
+    gap: 10px;
     justify-content: center;
-    gap: 20px; /* Garante espaço entre os projetos */
-    flex-wrap: wrap; /* Para não quebrar no celular */
-    padding: 40px 20px;
 }
 
-.projeto a {
-    display: inline-block;
-    margin: 10px 5px 0;
-    padding: 8px 14px;
-    background-color: #222;
-    color: #fff;
+.links a {
     text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+    background: #222;
+    padding: 8px 12px;
     border-radius: 6px;
-    font-size: 0.8rem;
     transition: 0.3s;
 }
 
-.projeto a:hover {
-    background-color: var(--primary);
-    color: #0b0f1a;
+.links a:hover {
+    background: var(--primary);
+    color: #000;
+}
+
+/* HR CUSTOM */
+hr {
+    border: none;
+    border-top: 1px solid #222;
+    max-width: 80%;
+    margin: 20px auto;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
     margin-top: 40px;
     border-top: 1px solid #222;
     color: var(--text-soft);
@@ -185,6 +226,10 @@ footer a {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .hero { flex-direction: column; }
-    .hero img { width: 150px; }
+    .hero { 
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+    }
+    .hero img { width: 150px; height: 150px; }
+    .card { width: 100%; max-width: 350px; }
 }

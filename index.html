@@ -20,8 +20,8 @@
 <nav>
     <div class="nav">
         <a href="#hero">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projeto">Projetos</a> <!-- Link corrigido -->
+        <a href="#projeto">Projetos</a>
+        <a href="https://github.com/RodrigoPBarros" target="_blank">GitHub</a>
     </div>
 </nav>
 
@@ -32,54 +32,70 @@
         <div class="hero-texto">
             <h1>Rodrigo P. Barros</h1>
             <h2>Desenvolvedor Front-end em evolução</h2>
-            <p>Criando projetos com HTML e CSS</p>
+            <p>Criando projetos com HTML, CSS e iniciando em JavaScript</p>
             <a href="https://github.com/RodrigoPBarros" target="_blank">Ver GitHub</a>
         </div>
         <img src="assets/Eu.jpg" alt="Minha foto">        
     </section>
 
-    <!-- CARDS DE HABILIDADES -->
+    <!-- SEÇÃO DE HABILIDADES -->
     <section class="cards">
-        <article class="card">
-            <h2>HTML Semântico</h2>
-            <p>Estruturação de páginas web com foco em organização e boas práticas.</p>
-        </article>
+    <article class="card html-card">
+        <h2>HTML Semântico</h2>
+        <p>Estruturação de páginas com foco em acessibilidade e SEO.</p>
+    </article>
 
-        <article class="card">
-            <h2>CSS Moderno</h2>
-            <p>Estilização de layouts com Flexbox, cores e responsividade básica.</p>
-        </article>
+    <article class="card css-card">
+        <h2>CSS Moderno</h2>
+        <p>Layouts avançados com Flexbox, Grid e animações de interface.</p>
+    </article>
 
-        <article class="card">
-            <h2>Projetos Práticos</h2>
-            <p>Desenvolvimento de páginas reais para praticar e evoluir como desenvolvedor.</p>
-        </article>
-    </section>
+    <article class="card js-card">
+        <h2>JavaScript</h2>
+        <p>Lógica de programação, manipulação de eventos e funções dinâmicas.</p>
+    </article>
 
-    <!-- SOBRE -->
-    <section class="sobre" id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou estudante de Ciência da Computação, atualmente focado em desenvolvimento front-end.</p>
-        <p>Estou aprendendo HTML e CSS, criando projetos para melhorar minhas habilidades.</p>
-    </section>
+    <!-- NOVA HABILIDADE -->
+    <article class="card git-card">
+        <h2>Git & GitHub</h2>
+        <p>Controle de versão, gerenciamento de repositórios e deploy de projetos.</p>
+    </article>
+</section>
 
-    <!-- PROJETOS -->
-    <section class="projeto" id="projeto"> <!-- ID unificado aqui -->
+    <hr>
 
-        <!-- PROJETO PERSONA 4 (Novo!) -->
+    <!-- SEÇÃO DE PROJETOS -->
+    <h1 class="titulo-projeto">Meus Projetos</h1>
+    <section class="projeto" id="projeto">
+
+        <!-- PROJETO PERSONA 4 -->
         <article class="card">
             <h2>Persona 4 Golden Page</h2>
-            <p>Fan page interativa com foco em UI design avançado e animações CSS.</p>
-            <a href="https://rodrigopbarros.github.io/persona4G-landing-page/" target="_blank">Ver projeto</a>
-            <a href="https://github.com/RodrigoPBarros/persona4-landing-page" target="_blank">Código</a>
+            <p>Projeto imersivo com estética Industrial, filtros CRT e CSS avançado.</p>
+            <div class="links">
+                <a href="https://rodrigopbarros.github.io/persona4G-landing-page/" target="_blank">Acessar</a>
+                <a href="https://github.com/RodrigoPBarros/persona4G-landing-page" target="_blank">GitHub</a>
+            </div>
         </article>
 
-        <!-- PROJETO ANTIGO -->
+        <!-- PROJETO INDUSTRIAL PLAYER -->
+        <article class="card">
+            <h2>Industrial Music Player</h2>
+            <p>Player de música funcional com design minimalista e industrial.</p>
+            <div class="links">
+                <a href="https://rodrigopbarros.github.io/music-player/" target="_blank">Acessar</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </article>
+
+        <!-- PRIMEIRO PROJETO -->
         <article class="card">
             <h2>Card de Perfil de Jogos</h2>
-            <p>Site feito com HTML e CSS para praticar estrutura e layout.</p>
-            <a href="https://rodrigopbarros.github.io/perfil-jogos/" target="_blank">Ver projeto</a>
-            <a href="https://github.com/RodrigoPBarros/perfil-jogos" target="_blank">Código</a>
+            <p>Primeiro contato com estilização de cards e efeitos de hover.</p>
+            <div class="links">
+                <a href="https://rodrigopbarros.github.io/perfil-jogos/" target="_blank">Acessar</a>
+                <a href="https://github.com/RodrigoPBarros/perfil-jogos" target="_blank">GitHub</a>
+            </div>
         </article>
 
     </section>
